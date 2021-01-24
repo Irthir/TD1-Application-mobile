@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Schlotter_Romain_le_formulaire_avec_navigation</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="date">Date</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="mail">Mail</string>
+    <string name="genre">Genre : </string>
+    <string name="homme">Homme</string>
+    <string name="femme">Femme</string>
+    <string name="programmation">Langages de Programmation : </string>
+    <string name="c">C</string>
+    <string name="cpp">C++</string>
+    <string name="java">Java</string>
+    <string name="photo">Photo</string>
+    <string name="labelphoto">Cliquez pour changer :</string>
+    <string name="heures">Nombre heures de jeu par semaine : </string>
+    <string name="reinitialiser">Réinitialiser</string>
+    <string name="valider">Valider</string>
+    <string name="accueil">Accueil</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <TextView
+            android:layout_marginTop="?attr/actionBarSize"
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/date"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/police"/>
+
+        <EditText
+            android:layout_below="@id/Date"
+            android:id="@+id/Nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/nom"
+            android:textSize="@dimen/police"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:layout_below="@id/Nom"
+            android:id="@+id/Prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/prenom"
+            android:textSize="@dimen/police"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_below="@id/Prenom"
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/mail"
+            android:textSize="@dimen/police"
+            android:importantForAutofill="no" />
+
+        <RadioGroup
+            android:id="@+id/Genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Email"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/genre"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/police"
+                />
+            <RadioButton
+                android:id="@+id/Homme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homme"
+                android:textSize="@dimen/police"/>
+
+            <RadioButton
+                android:id="@+id/Femme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/femme"
+                android:checked="true"
+                android:textSize="@dimen/police"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Programmation"
+            android:layout_below="@id/Genre"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programmation"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/police"
+                />
+
+            <CheckBox android:id="@+id/C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c"
+                android:textSize="@dimen/police"/>
+
+            <CheckBox android:id="@+id/CPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cpp"
+                android:textSize="@dimen/police"/>
+
+            <CheckBox android:id="@+id/Java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/java"
+                android:textSize="@dimen/police"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelphoto"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/Programmation"
+            android:id="@+id/labelPhoto"
+            android:textSize="@dimen/police"
+            />
+        <ImageView
+            android:id="@+id/Photo"
+            android:layout_below="@id/labelPhoto"
+            android:layout_width="@dimen/photo"
+            android:layout_height="@dimen/photo"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/photo"
+            android:textSize="@dimen/police"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/heures"
+            android:id="@+id/labelHeures"
+            android:layout_below="@id/Photo"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/police"/>
+        <EditText
+            android:layout_below="@id/labelHeures"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Heures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/heures"
+            android:textSize="@dimen/police"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Heures"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/Reinitialiser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reinitialiser"
+                android:layout_marginEnd="@dimen/paddingbouton"
+                android:textSize="@dimen/police"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@color/black"/>
+
+            <Button
+                android:id="@+id/Valider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valider"
+                android:textSize="@dimen/police"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@color/black"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
